@@ -1,0 +1,50 @@
+.button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #ddd;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 10px;
+
+    &:hover {
+        background-color: #308014;
+        color: white;
+    }
+    
+}
+
+
+
+
+.the-toggler {
+    background-color: green;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    display: none;
+    outline: none;
+    
+    @media #{$ExtraSmall} {
+        
+        display: block;//علشان يظهرهالى فى ميديا الموبايل فقط ويخفيها فى الباقى
+    
+    }
+    
+    span {
+        
+        display: block;
+        width: 50px;
+        height: 4px;
+        background-color: #FFF;
+        
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+}
